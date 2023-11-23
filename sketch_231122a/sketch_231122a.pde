@@ -1,22 +1,31 @@
 //Global Variables
 int appWidth, appHeight, smallerDimension;
+Boolean OS_On=false;
+float xRect, yRect, rectWidth, rectHeight;
+float xRect2, yRect2;
+float xRect3, yRect3;
 //
 void setup() {
 fullScreen();
 appWidth = displayWidth;
 appHeight = displayHeight;
-//Display Algorithm
-smallerDimension = (appWidth >= appHeight) ? appHeight : appWidth;
- //Purpose: CANVAS fits in monitor & dimension size is known
-  //Output #1: Console confirms CANVAS will fit in the monitor
-  //Output #2: Console confirms display orientation (landscape-square or portrait)
-  //Output #3: Console confirms dimension sizes (smaller and larger)
-  //Output #4: if error with any of above, program will exit or be broken
-  //           Hint: "Bru, turn your phone."
+//
+displayAlgorithm();
+//
+ xRect = appWidth*0;
+ yRect = appHeight*0;
+ rectWidth = appWidth*1/3;
+ rectHeight = appHeight*1/3;
+ 
 }
 //
-void draw(){}
+void draw(){
+if ( OS_On == true ) splashScreen();
+rect(xRect, yRect, rectWidth, rectHeight);
+}
 //
-void mousePressed() {}
+void mousePressed() {
+if( OS_On == false );
+}
 //
 void keyPressed() {}
