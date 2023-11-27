@@ -1,6 +1,6 @@
 //Global Variables
 int appWidth, appHeight, smallerDimension;
-Boolean OS_On=false;
+Boolean OS_On=false, programStart=false;
 float xRect, yRect, rectWidth, rectHeight;
 float xRect2, yRect2;
 float xRect3, yRect3;
@@ -9,8 +9,10 @@ float xRect5, yRect5;
 float xRect6, yRect6;
 float xRect7, yRect7;
 float xRect8, yRect8;
+float xRect9, yRect9;
+float xButton1, yButton1, xButton2, yButton2, buttonWidth, buttonHeight;
 float ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight;
-color Black=(#000000);
+color Black=(#000000), resetColour =(#FFFFFF);
 PFont Georgia;
 //
 void setup() {
@@ -20,36 +22,12 @@ appHeight = displayHeight;
 //
 displayAlgorithm();
 textSetup();
-//
-
-//
-float centerX=appWidth*1/2 , centerY=appHeight*1/2;
-ssSpaceBarWidth = appWidth*1/2;
-ssSpaceBarHeight = appHeight*1/10;
-ssSpaceBarX = centerX - ssSpaceBarWidth*1/2 ;
-ssSpaceBarY = centerY - ssSpaceBarHeight*1/2;
- xRect = appWidth*0;
- yRect = appHeight*0;
- rectWidth = appWidth*1/3;
- rectHeight = appHeight*1/3;
- xRect2 = appWidth*1/3;
- yRect2 = yRect;
- xRect3 = appWidth*2/3;
- yRect3 = yRect;
- xRect4 = xRect;
- yRect4 = appHeight*1/3;
- xRect5 = xRect3;
- yRect5 = yRect4;
- xRect6 = xRect;
- yRect6 = appHeight*2/3;
- xRect7 = xRect2;
- yRect7 = yRect6;
- xRect8 = xRect3;
- yRect8 = yRect6;
+population();
+loadImagesSetup();
 }
 //
 void draw(){
-if ( OS_On == true ) splashScreen();
+
 //
 rect(xRect, yRect, rectWidth, rectHeight);
 rect(xRect2, yRect2, rectWidth, rectHeight);
@@ -59,10 +37,17 @@ rect(xRect5, yRect5, rectWidth, rectHeight);
 rect(xRect6, yRect6, rectWidth, rectHeight);
 rect(xRect7, yRect7, rectWidth, rectHeight);
 rect(xRect8, yRect8, rectWidth, rectHeight);
+rect(xRect9, yRect9, rectWidth, rectHeight);
+if ( OS_On == true && programStart == false) splashScreen();
+if (OS_On == true && programStart == true) homeScreen();
 }
 //
 void mousePressed() {
 if( OS_On == false )OS_On = true;
 }
 //
-void keyPressed() {}
+void keyPressed() {
+if(key==' ') programStart= true;
+if( key==CODED && keyCode==ESC) exit();
+if( key=='Q' && key=='q' ) exit();
+}

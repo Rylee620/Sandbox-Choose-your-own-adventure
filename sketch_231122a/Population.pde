@@ -1,0 +1,31 @@
+void population() {
+float centerX=appWidth*1/2 , centerY=appHeight*1/2;
+ssSpaceBarWidth = appWidth*1/2;
+ssSpaceBarHeight = appHeight*1/10;
+ssSpaceBarX = centerX - ssSpaceBarWidth*1/2 ;
+ssSpaceBarY = centerY - ssSpaceBarHeight*1/2;
+backgroundX = appWidth*0;
+backgroundY = appHeight*0;
+bacgroundWidth = appWidth-1;
+backgroundHeight = appHeight-1;
+ xRect = appWidth*0;
+ yRect = appHeight*0;
+ rectWidth = appWidth*1/3;
+ rectHeight = appHeight*1/3;
+ xRect2 = appWidth*1/3;
+ yRect2 = yRect;
+ xRect3 = appWidth*2/3;
+ yRect3 = yRect;
+ xRect4 = xRect;
+ yRect4 = appHeight*1/3;
+ xRect5 = xRect2;
+ yRect5 = appHeight*1/3;
+ xRect6 = xRect3;
+ yRect6 = yRect4;
+ xRect7 = xRect;
+ yRect7 = appHeight*2/3;
+ xRect8 = xRect2;
+ yRect8 = yRect7;
+ xRect9 = xRect3;
+ yRect9 = yRect7;
+}
