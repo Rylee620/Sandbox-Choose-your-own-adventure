@@ -29,15 +29,7 @@ loadImagesSetup();
 void draw(){
 
 //
-rect(xRect, yRect, rectWidth, rectHeight);
-rect(xRect2, yRect2, rectWidth, rectHeight);
-rect(xRect3, yRect3, rectWidth, rectHeight);
-rect(xRect4, yRect4, rectWidth, rectHeight);
-rect(xRect5, yRect5, rectWidth, rectHeight);
-rect(xRect6, yRect6, rectWidth, rectHeight);
-rect(xRect7, yRect7, rectWidth, rectHeight);
-rect(xRect8, yRect8, rectWidth, rectHeight);
-rect(xRect9, yRect9, rectWidth, rectHeight);
+
 if ( OS_On == true && programStart == false) splashScreen();
 if (OS_On == true && programStart == true) homeScreen();
 }

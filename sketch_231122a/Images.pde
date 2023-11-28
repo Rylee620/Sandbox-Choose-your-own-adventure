@@ -9,7 +9,12 @@ fill(resetColour);
 }
 void backgroundImage() {
 backgroundRect();
-
-image(backGroundImage);
+image(backGroundImage, backgroundX, backgroundY, bacgroundWidth, backgroundHeight);
 }
-void loadImagesSetup
+
+void loadImagesSetup() {
+String Pathway = "../Images/";
+String Image1 = "daedon.jpg";
+backGroundImage=loadImage(Pathway + Image1);
+
+}

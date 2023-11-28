@@ -1,5 +1,5 @@
 int size = 18; //Change the number until it fits
-String spaceBar = "Click Mouse to Continue";
+String spaceBar = "Press spaceBar to Continue";
 color Purple=#FF00FF, White=#FFFFFF;
 
 void textSetup() {
