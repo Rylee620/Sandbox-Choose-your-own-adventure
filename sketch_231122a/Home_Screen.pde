@@ -14,4 +14,7 @@ rect(xRect6, yRect6, rectWidth, rectHeight);
 rect(xRect7, yRect7, rectWidth, rectHeight);
 rect(xRect8, yRect8, rectWidth, rectHeight);
 rect(xRect9, yRect9, rectWidth, rectHeight);
+rect(xRectStart, yRectStart, rectWidth2, rectHeight2);
+homeScreenText();
+
 }
