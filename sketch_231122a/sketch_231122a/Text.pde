@@ -4,7 +4,8 @@ String start = "Start";
 String text1 = "Welcome to Me trying to start a project";
 String text2 = "Step 1, I am already confused";
 String text3 = "Step 2, when in doubt, add more rectangles";
-String text4 = "Step 3, Maybe change the Rect Colors?";
+String text4 = "Step 3, Maybe a sound effect?";
+String text5 = "";
 color Purple=#FF00FF, White=#FFFFFF, Cyan=#06CDD6, Purple2=#371762, Orange=#FC3F0A, Green=#00431B;
 
 void textSetup() {
@@ -70,4 +71,10 @@ text(text4, xRect4, yRect4, rectWidth, rectHeight);
 fill(Purple2);
 ellipse(xEllipse, yEllipse, ellipseDiameter, ellipseDiameter);
 fill(White);
+}
+void box6Text(){
+  textAlign(CENTER, CENTER);
+size = 28;
+textFont( Georgia, size);
+fill(
 }
